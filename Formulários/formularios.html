@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        label{
+            display: block;
+            cursor: pointer;
+        }
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            
+        }
+        fieldset{
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid rebeccapurple ;
+            background:pink;
+        }
+        legend{
+            font-weight:bold ;
+        }
+    input[type="text"]{
+        width: 20rem;
+    }
+    textarea{
+        width: 20rem;
+        height: 10rem;
+        resize: none;
+    }
+   /* input.radio, input.checkbox,input.submit{
+        width: 30rem;*/
+    
+    </STYLE>
+</head>
+<body>
+    <h2>Estilos de formlários</h2>
+    <form>
+        <fieldset>
+            <legend>Detalhes do Usuário</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+               </div>
+
+               <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+               </div>
+
+               <div>
+                <label for="url">Url:</label>
+                <input type="url" name="url" id="url">
+               </div>
+        </fieldset>
+        <fieldset>
+            <legend>comentarios:</legend>
+            <div>
+                <label for="menssagem">Mensagem:</label>
+             <textarea name="mens" id="" cols="30" rows="10">
+
+             </textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Lembrar de mim:</legend>
+            <div>
+              <label>
+                <input class="radio" type="radio" name="lembrar" id="sim">Sim
+              </label>
+            </div>
+            <div>
+                <label>
+                  <input class="radio" type="radio" name="lembrar"id="nao">Não
+                </label>
+              </div>
+        </fieldset>
+  
+    </form>
+</body>
+</html>
